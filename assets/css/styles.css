@@ -1,15 +1,20 @@
 :root {
   --inv: #1f1f1f;
   --def: #e8e9e9;
+  --primaryBackgroundColor: rgba(98, 83, 214, 0.401);
+  --secondaryBackgroundColor: #1f1f1f;
+}
+body {
+  color: #eee;
+  font-size: 1em;
 }
 
 /* Header========================== */
 #header {
   position: fixed;
-  z-index: 1;
-  background: rgba(131, 11, 39, 0.4);
+  background: var(--primaryBackgroundColor);
   width: 100vw;
-  height: 80px;
+  height: 60px;
 }
 /* Navbar */
 #navbar {
@@ -107,3 +112,58 @@
   height: 100vh;
   width: 100vw;
 }
+
+#landpage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+}
+.landpage-leftSide {
+  margin-right: 50px;
+}
+.landpage-leftSide h1 {
+  font-size: 48px;
+  letter-spacing: 10px;
+}
+
+.landpage-rightSide {
+  width: 500px;
+  height: 400px;
+  background-color: var(--primaryBackgroundColor);
+  border-radius: 20px;
+  box-shadow: 5px 5px 5px var(--secondaryBackgroundColor);
+}
+#form-spanContainer {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  margin: 20px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#submit {
+  width: 100%;
+  border-radius: 20px;
+  background-color: var(--secondaryBackgroundColor);
+  color: #eee;
+  font-size: 1em;
+  letter-spacing: 0.3em;
+  font-style: italic;
+}
+
+#content-input {
+  max-width: 400px;
+  max-height: 150px;
+}
+
+/* .dark-theme {
+  background-color: #1f1f1f;
+} */
