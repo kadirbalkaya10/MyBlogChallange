@@ -12,11 +12,11 @@
 </head>
 <body>
     <!-- HEADER -->
-    <header id="header">
+    <header  class="header" id="header">
         <nav id="navbar">
             <span id="nav-span"></span>
             <h1>Ready for Journey</h1>
-            <div class="btn from-left"><img id="btn-icon" src="./assets/images/lightning.png" alt="lightning"></div>
+            <div class="btn from-left" id="btn-darktheme"><img id="btn-icon" src="./assets/images/lightning.png" alt="lightning"></div>
         </nav>
     </header>
 
@@ -26,7 +26,7 @@
             <div class="landpage-leftSide">
                 <h1>My First Blog</h1>
             </div>
-            <div class="landpage-rightSide">
+            <div class="landpage-rightSide" id="landpage-rightSide">
                 <form action="" method="get" class="form">
                     <span id="form-spanContainer">
                         <label class="label" for="username" id="label-username">Username:</label>
@@ -41,10 +41,11 @@
                         <textarea name="content" id="content-input" cols="30" rows="10"></textarea>
                     </span>
                     
-                    <input type="submit" value="Submit" id="submit">
+                    <input type="submit" value="Submit" id="submit" class="submit">
                 </form>
             </div>
         </section>
     </main>
+    <script src="./assets/js/form.js"></script>
 </body>
 </html>

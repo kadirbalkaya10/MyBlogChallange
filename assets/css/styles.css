@@ -10,12 +10,15 @@ body {
 }
 
 /* Header========================== */
-#header {
+
+.header {
   position: fixed;
   background: var(--primaryBackgroundColor);
   width: 100vw;
   height: 60px;
+  transition: all 0.3s ease-in;
 }
+
 /* Navbar */
 #navbar {
   display: flex;
@@ -134,6 +137,7 @@ body {
   background-color: var(--primaryBackgroundColor);
   border-radius: 20px;
   box-shadow: 5px 5px 5px var(--secondaryBackgroundColor);
+  transition: all 0.3s ease-in;
 }
 #form-spanContainer {
   display: flex;
@@ -149,7 +153,7 @@ body {
   align-items: center;
 }
 
-#submit {
+.submit {
   width: 100%;
   border-radius: 20px;
   background-color: var(--secondaryBackgroundColor);
@@ -157,6 +161,7 @@ body {
   font-size: 1em;
   letter-spacing: 0.3em;
   font-style: italic;
+  transition: all 0.3s ease-in;
 }
 
 #content-input {
@@ -164,6 +169,10 @@ body {
   max-height: 150px;
 }
 
-/* .dark-theme {
+.dark-theme {
   background-color: #1f1f1f;
-} */
+}
+
+.blue-submit {
+  background-color: var(--primaryBackgroundColor);
+}
