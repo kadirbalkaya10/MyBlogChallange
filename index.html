@@ -13,34 +13,54 @@
 <body>
     <!-- HEADER -->
     <header  class="header" id="header">
+        <!-- Nav bar  header on middle and on the right side change theme button -->
         <nav id="navbar">
+            <!-- Just to empty span for spacing -->
             <span id="nav-span"></span>
+            <!-- Navbar heading -->
             <h1>Ready for Journey</h1>
+            <!-- Dark theme button with hover over efects -->
             <div class="btn from-left" id="btn-darktheme"><img id="btn-icon" src="./assets/images/lightning.png" alt="lightning"></div>
         </nav>
     </header>
 
     <!-- MAIN -->
+
+    <!-- main section on the page where content is  -->
     <main id="main">
-        <section id="landpage">
-            <div class="landpage-leftSide">
+        <!-- Landpage container -->
+        <section class="landpage" id="landpage">
+            <!-- Left side of main content  -->
+            <div class="landpage-leftSide" id="landpage-leftSide">
+                <!-- Heading on left side  -->
                 <h1>My First Blog</h1>
             </div>
+            <!-- Right side main conten whic will have form input -->
             <div class="landpage-rightSide" id="landpage-rightSide">
-                <form action="" method="get" class="form">
+                <!-- Form -->
+                <form action="" method="get" class="form" id="form">
+                    <!-- Form input element container -->
                     <span id="form-spanContainer">
+                        <!-- Username label -->
                         <label class="label" for="username" id="label-username">Username:</label>
+                        <!-- Username input text -->
                         <input type="text">
                     </span>
+                    <!-- Form input element container -->
                     <span  id="form-spanContainer">
+                        <!-- Title label -->
                         <label id="title" for="title">Title:</label>
+                        <!-- Title input -->
                         <input type="text">
                     </span>
+                    <!-- Form input element container -->
                     <span id="form-spanContainer">
+                        <!-- Content label -->
                         <label id="content" for="content">Content:</label>
+                        <!-- Content text area with 30 column and 10 rows -->
                         <textarea name="content" id="content-input" cols="30" rows="10"></textarea>
                     </span>
-                    
+                    <!-- Submit button -->
                     <input type="submit" value="Submit" id="submit" class="submit">
                 </form>
             </div>
