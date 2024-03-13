@@ -1,7 +1,13 @@
+/* Reuseable variables */
+
 :root {
+  /* Button hover over color */
   --inv: #1f1f1f;
+  /* Button hover over line */
   --def: #e8e9e9;
+  /* Primary backgorundColor */
   --primaryBackgroundColor: rgba(98, 83, 214, 0.401);
+  /* Dark theme color */
   --secondaryBackgroundColor: #1f1f1f;
 }
 body {
@@ -11,6 +17,7 @@ body {
 
 /* Header========================== */
 
+/* Header will stick on top */
 .header {
   position: fixed;
   background: var(--primaryBackgroundColor);
@@ -116,6 +123,7 @@ body {
   width: 100vw;
 }
 
+/* Landapage section thats round around all form elements and heading */
 #landpage {
   display: flex;
   justify-content: center;
@@ -131,6 +139,8 @@ body {
   letter-spacing: 10px;
 }
 
+/* Giving scale and color for right side form box  */
+
 .landpage-rightSide {
   width: 500px;
   height: 400px;
@@ -139,6 +149,7 @@ body {
   box-shadow: 5px 5px 5px var(--secondaryBackgroundColor);
   transition: all 0.3s ease-in;
 }
+/* Form span all elements are in same scale  */
 #form-spanContainer {
   display: flex;
   flex-direction: column;
@@ -146,6 +157,7 @@ body {
   margin: 20px;
 }
 
+/* For Align items , positon like we want displaying flex */
 .form {
   display: flex;
   flex-direction: column;
@@ -153,6 +165,7 @@ body {
   align-items: center;
 }
 
+/* Submit button */
 .submit {
   width: 100%;
   border-radius: 20px;
@@ -164,14 +177,17 @@ body {
   transition: all 0.3s ease-in;
 }
 
+/* Content text area max with ,height it can be  */
 #content-input {
   max-width: 400px;
   max-height: 150px;
 }
 
+/* Dark theme switcher */
 .dark-theme {
   background-color: #1f1f1f;
 }
+/* When we switch to dark theme,chaning submit color blue cause , original color is black */
 
 .blue-submit {
   background-color: var(--primaryBackgroundColor);
