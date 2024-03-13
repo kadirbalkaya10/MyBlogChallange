@@ -8,7 +8,7 @@
   /* Primary backgorundColor */
   --primaryBackgroundColor: rgba(98, 83, 214, 0.401);
   /* Dark theme color */
-  --secondaryBackgroundColor: #1f1f1f;
+  --secondaryBackgroundColor: rgba(27, 26, 26, 0.88);
 }
 body {
   color: #eee;

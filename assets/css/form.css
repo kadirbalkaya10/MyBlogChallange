@@ -1,0 +1,177 @@
+/* Reuseable variables */
+
+:root {
+  /* Button hover over color */
+  --inv: #1f1f1f;
+  /* Button hover over line */
+  --def: #e8e9e9;
+  /* Primary backgorundColor */
+  --primaryBackgroundColor: rgba(98, 83, 214, 0.401);
+  /* Dark theme color */
+  --secondaryBackgroundColor: rgba(27, 26, 26, 0.88);
+}
+body {
+  color: #eee;
+  font-size: 1em;
+}
+
+/* Header========================== */
+
+/* Header will stick on top */
+.header {
+  position: fixed;
+  background: var(--primaryBackgroundColor);
+  width: 100vw;
+  height: 60px;
+  transition: all 0.3s ease-in;
+}
+
+/* Navbar */
+#navbar {
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+#navbar h1 {
+  font-size: 1.5rem;
+  letter-spacing: 4px;
+  font-weight: lighter;
+  color: #eee;
+}
+#navbar span {
+  width: 100px;
+}
+/* Dark mode switch btn  */
+.btn {
+  position: relative;
+  color: var(--inv);
+  letter-spacing: 0.5rem;
+  text-transform: uppercase;
+  transition: all 500ms cubic-bezier(0.77, 0, 0.175, 1);
+  cursor: pointer;
+  user-select: none;
+  width: 200px;
+  text-align: center;
+}
+
+.btn:before,
+.btn:after {
+  content: '';
+  position: absolute;
+  transition: inherit;
+  z-index: -1;
+}
+
+/* Hover over effect */
+
+.btn:hover {
+  color: var(--def);
+  transition-delay: 0.5s;
+}
+
+.btn:hover:before {
+  transition-delay: 0s;
+}
+
+.btn:hover:after {
+  background: var(--inv);
+  transition-delay: 0.35s;
+}
+
+.from-left:before,
+.from-left:after {
+  top: 0;
+  width: 0;
+  height: 100%;
+}
+
+.from-left:before {
+  right: 0;
+  border: 1px solid var(--inv);
+  border-left: 0;
+  border-right: 0;
+}
+
+.from-left:after {
+  left: 0;
+}
+
+.from-left:hover:before,
+.from-left:hover:after {
+  width: 100%;
+}
+
+/* Icon scale */
+
+#btn-icon {
+  width: 60px;
+  height: 40px;
+  color: #eee;
+}
+
+/* MAIN======================================================= */
+
+/* Setting back ground for main */
+#main {
+  background-image: url(../images/landscape.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.blog-box {
+  margin-top: 100px;
+  width: 90%;
+  height: 80%;
+  background-color: var(--primaryBackgroundColor);
+  border-radius: 20px;
+  color: #eee;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.blog-content {
+  width: 90%;
+  height: 200px;
+  background-color: var(--secondaryBackgroundColor);
+  border-radius: 20px;
+  margin-top: 20px;
+  padding: 20px;
+  overflow: hidden;
+  scroll-behavior: smooth;
+}
+.blogInputContainer {
+  background-color: var(--primaryBackgroundColor);
+  height: 99%;
+  width: 98%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 20px;
+}
+
+.blog-titleInput {
+  padding: 10px;
+  border-bottom: 1px solid #eee;
+  font-size: 24px;
+}
+
+.blog-contentInput {
+  padding: 10px;
+  border-bottom: 1px solid #eee;
+  flex-grow: 1;
+}
+
+.blog-textInput {
+  padding: 10px;
+  font-size: 0.8em;
+  font-style: italic;
+}
