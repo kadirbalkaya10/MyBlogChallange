@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./assets/css/reset.css">
-    <link rel="stylesheet" href="./assets/css/styles.css">
+    <link rel="stylesheet" href="./assets/css/blog.css">
 </head>
 <body>
     <!-- HEADER -->
@@ -37,21 +37,21 @@
             </div>
             <!-- Right side main conten whic will have form input -->
             <div class="landpage-rightSide" id="landpage-rightSide">
-                <!-- Form -->
-                <form action="" method="get" class="form" id="form">
+                <!-- Form  on submit it redirect to blog.html-->
+                <form action="./blog.html" method="get" class="form" id="form">
                     <!-- Form input element container -->
                     <span id="form-spanContainer">
                         <!-- Username label -->
                         <label class="label" for="username" id="label-username">Username:</label>
                         <!-- Username input text -->
-                        <input type="text">
+                        <input type="text" id="text-input">
                     </span>
                     <!-- Form input element container -->
                     <span  id="form-spanContainer">
                         <!-- Title label -->
                         <label id="title" for="title">Title:</label>
                         <!-- Title input -->
-                        <input type="text">
+                        <input type="text" id="title-input">
                     </span>
                     <!-- Form input element container -->
                     <span id="form-spanContainer">
@@ -66,6 +66,7 @@
             </div>
         </section>
     </main>
-    <script src="./assets/js/form.js"></script>
+    <script src="./assets/js/logic.js"></script>
+    <script src="./assets/js/blog.js"></script>
 </body>
 </html>
